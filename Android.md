@@ -42,3 +42,27 @@ Android系统是基于Linux内核的 , 这一层为Android设备的各种硬件�
 
 为应用程序之间共享数据提供了可能
 
+
+
+## Activity
+
+### 什么是Activity
+
+Activity 是最容易吸引用户的地方 , 他是一种可以包含用户界面的组件 , 主要用于和用户进行交互 . 
+
+一个应用程序中可以包含零个或多个Activity , 但不包含任何Activity的应用程序很少见
+
+### 基本用法
+
+创建Activity之后自动重写`onCreate()`方法
+
+```kotlin
+class FirstActivity : AppCompatActivity(){
+    override fun onCreate(savedInstanceState : Bundle?){
+        super.onCreate(savedInstanceState)
+    }
+}
+```
+
+
+
